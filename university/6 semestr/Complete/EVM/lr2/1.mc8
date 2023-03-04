@@ -1,0 +1,92 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 2
+ROM 3
+RAM 3
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+portA EQU 00
+portB EQU 01
+portC EQU 02
+portD EQU 03
+portE EQU 04
+portF EQU 05
+portG EQU 06
+
+
+JP START
+
+ORG 8h
+JP INT1
+
+ORG 10h
+JP INT2
+
+ORG 18h
+JP INT3
+
+ORG 20h
+JP INT4
+
+ORG 100h
+START:
+
+EI
+
+LOOP:
+	JP LOOP
+
+INT1: ;чтение адреса
+	IN A, (portA)
+	OR 10000000b
+	OUT (portA), A
+	AND 01000000b
+	JP Z, READ
+EI
+RET
+
+INT2: ;чтение третьих (младших) 8 бит числа
+	IN A, (portA)
+	OUT (portB), A
+EI
+RET
+
+INT3: ;чтение вторых 8 бит числа
+	IN A, (portA)
+	OUT (portC), A
+EI
+RET
+	
+INT4: ;чтение первых (старших) 8 бит числа
+	IN A, (portA)
+	OUT (portD), A
+EI
+RET
+
+READ:;чтение памяти
+	IN A, (portB)
+	OUT (portE), A
+	
+	IN A, (portC)
+	OUT (portF), A
+	
+	IN A, (portD)
+	OUT (portG), A
+EI
+RET

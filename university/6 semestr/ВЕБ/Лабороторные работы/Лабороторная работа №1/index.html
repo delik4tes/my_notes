@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Желагин Егор А-12-20</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1 align="center">
+  Канцелярский магазин
+  </h1>
+  <form action="index.php" method="get">
+      <table border="1" align="center">
+          <thead>
+          <tr>
+              <td colspan="4" align="center">Канцелярский магазин "Очумелые ручки", <br> комплект "скорая помощь художнику"</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td>
+                  Внесите в заказ:
+              </td>
+              <td>
+                  <p>Простые карандаши</p>
+                  <p>
+                      <input type="color" name="first_color">
+                      <input type="number" min="0" placeholder="0" name="first_count" value="0">
+                      <label>шт</label>
+                  </p>
+                  <p>
+                      <input type="color" name="second_color">
+                      <input type="number" min="0" placeholder="0" name="second_count" value="0">
+                      <label>шт</label>
+                  </p>
+                  <p>
+                      <input type="color" min="0" name="third_color">
+                      <input type="number" placeholder="0" name="third_count" value="0">
+                      <label>шт</label>
+                  </p>
+              </td>
+              <td>
+                  <p>Холст</p>
+                  <p>
+                      <input type="radio" name="format" value="A2" checked>
+                      <label>A2</label>
+                      <input type="radio" name="format" value="A3">
+                      <label>A3</label>
+                      <input type="radio" name="format" value="A4">
+                      <label>A4</label>
+                  </p>
+              </td>
+              <td>
+                  <p>
+                      <input type="checkbox" name="paints[]" value="Гуашь">
+                      <label>Гуашь</label>
+                  </p>
+                  <p>
+                      <input type="checkbox" name="paints[]" value="Акварель">
+                      <label>Акварель</label>
+                  </p>
+                  <p>
+                      <input type="checkbox" name="paints[]" value="Чёрный контурный маркер">
+                      <label>Чёрный контурный маркер</label>
+                  </p>
+                  <p>
+                      <input type="checkbox" name="paints[]" value="Ластик">
+                      <label>Ластик</label>
+                  </p>
+              </td>
+          </tr>
+          <tr>
+              <td></td>
+              <td colspan="2">
+                  <p align="center">
+                      <label>Дополните заказ вашими пожеланиями:</label><br>
+                      <textarea name="wishes"></textarea>
+                  </p>
+              </td>
+              <td></td>
+          </tr>
+          <tr>
+              <td colspan="2" align="center">
+                  <label>Телефон</label>
+                  <input type="text" name="phone" placeholder="+7(XXX) XXX-XX-XX">
+              </td>
+              <td colspan="2">
+                  <input type="checkbox" name="promotion" value="1">
+                  <label>Хотите получать смс-оповещения о новых акциях?</label>
+              </td>
+          </tr>
+          <tr>
+              <td colspan="2">
+                  <p align="center">
+                      <input type="radio" name="delivery" value="Самовывоз" checked>
+                      <label>Самовывоз</label>
+                      <input type="radio" name="delivery" value="Курьер">
+                      <label>Курьер</label>
+                  </p>
+                  <p align="center">
+                      <label>Адрес доставки:</label>
+                      <input type="text" name="address">
+                  </p>
+              </td>
+              <td colspan="2" align="center">
+                  <input type="submit" name="submit" value="Купить" id="submit">
+              </td>
+          </tr>
+          </tbody>
+      </table>
+  </form>
+</body>
+</html>

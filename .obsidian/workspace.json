@@ -1,0 +1,233 @@
+{
+  "main": {
+    "id": "cf88335817ea1029",
+    "type": "split",
+    "children": [
+      {
+        "id": "f3da31c88344cb77",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e2631349aad9ab5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "computer networks/2.Технологии физического уровня.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a5720c674c68ff3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "golang/_Go.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "3e9784209a5b0ebb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4e7057bfd64f5fcc",
+    "type": "split",
+    "children": [
+      {
+        "id": "da994dc84cfea441",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "881f063f9ea46c01",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": true,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d622a7b523f919a1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "5589a6ad04c12db1",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ab9f05b0ac41e35",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb7adf9ed12181e6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "0510c7eb44008911",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "6c6aa0158151fe2f",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "7e5625e6e97d7c71",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b17c6ca3cdf083b7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "f7f587f9f5a38410",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7764954f79128e30",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 227.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "footlinks:Footlinks": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "3e9784209a5b0ebb",
+  "lastOpenFiles": [
+    "golang/_Go.md",
+    "computer networks/2.Технологии физического уровня.md",
+    "university/6 semestr/ВЕБ/Курсовая работа.pdf",
+    "university/6 semestr/МПС/Лабороторные работы/Пояснение к лабороторной работе №1.pdf",
+    "university/6 semestr/ВЕБ/Лабороторные работы/Лабороторная работа №1/main.css",
+    "university/6 semestr/ВЕБ/Лабороторные работы/Лабороторная работа №1/index.php",
+    "university/6 semestr/ВЕБ/Лабороторные работы/Лабороторная работа №1/index.html",
+    "university/6 semestr/ВЕБ/Лабороторные работы/Лабороторная работа №1",
+    "university/6 semestr/ВЕБ/Лабороторные работы",
+    "university/6 semestr/ВЕБ/untitled folder",
+    "university/6 semestr/Сети/Лекция №3 по сетям.pdf",
+    "university/6 semestr/Untitled.md",
+    "university/6 semestr/Курсовая работа.pdf",
+    "self made/Советы по тренировкам.md",
+    "personal diary/Прочитано.md",
+    "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
+    "personal diary/2022-2023 1-ый квартал/Цели на 2-ой квартал.md",
+    "personal diary/2022-2023 1-ый квартал/_attachments/5c8fc9c8eed67e742d35acb8edac8d82.png",
+    "personal diary/2023 2-ой квартал/03.Март/01.03.2023.md",
+    "personal diary/План.md",
+    "computer networks/_attachments/b33a87b7704e9640c4b565ea188f4683.png",
+    "computer networks/_attachments/c10b00c5351e3e865c07c6e19afddfdd.png",
+    "computer networks/_attachments/164332ce10c80878f8f2efa6b11da9e4.png",
+    "computer networks/_attachments/a1cf3b3aade4faef5e3862a6961c6658.png",
+    "computer networks/_attachments/a8b7ffbeebf2f0d901e913752a891369.png",
+    "computer networks/_attachments/099f831d832c8145f5617d97bfe263a2.png",
+    "computer networks/_attachments/4ff075381a2b76d01fd8792ef54413a0.png",
+    "computer networks/_attachments/7a9e4b166c0ecc09852af65963139a52.png",
+    "personal diary/Баскетбол.md",
+    "_attachments/f1a29b928d3a9c8a094c2dfbe58b9613.png",
+    "_attachments/2d2b2960e4e80e18faddf4903d6dbe26.png.md",
+    "terminal/Homebrew.md",
+    "archive/HTTPS.md",
+    "programming/Курсы IT.md",
+    "programming/URL.md",
+    "archive/Архитектура restAPI.md",
+    "archive/Архитектура кода.md",
+    "programming/Подкасты.md",
+    "programming/Требование вакансий.md",
+    "archive/Реляционные базы данных.md",
+    "programming/Материалы для самообучения.md",
+    "programming/Курсы с Youtube.md",
+    "web/css/Материалы.md",
+    "personal diary/Принципы.md",
+    "archive/Сетевое программирование.md"
+  ]
+}

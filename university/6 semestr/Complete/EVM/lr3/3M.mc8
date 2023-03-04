@@ -1,0 +1,144 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 2
+ROM 3
+RAM 3
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+ptA EQU 00
+ptB EQU 01
+ptC EQU 02
+ptD EQU 03
+ptE EQU 04
+ptF EQU 05
+ptG EQU 06
+ptH EQU 07
+
+ORG 0
+	JP START
+
+ORG 8h
+	JP INT1
+ORG 10h
+	JP INT2
+ORG 18h
+	JP INT3
+ORG 20h
+	JP INT4
+
+ORG 100h
+START:
+
+INF:
+	EI
+	JP INF
+
+;Процедура проверки времени
+CheckPartTime:
+	LD C, A	;Сохраняем копию в C
+	AND 0Fh	;Отрезаем старшую часть
+	CP 0Ah	;Проверяем, что не больше 10ти
+	JP M, CheckPassed	;Если больше или равно, то обнуляем
+	LD A, 0
+	JP Done
+CheckPassed:
+	LD A,C	;Загружаем копию 
+	CP B		;Сравниваем с максимальным
+	JP M, Done	;Если больше или равно, то обнуляем
+	LD A, 0	
+Done:	
+RET
+
+INT1:
+	IN A, (ptH)
+	LD A, L	;Загрузить состояние
+	CP 1
+	JP Z, INT2Min	;Загрузка минут
+	CP 2
+	JP Z, INT2Hour	;Загрузка часов
+	
+	CP 3
+	JP Z, INT3B	;Загрузка B
+	CP 4
+	JP Z, INT3Op	;Загрузка операции
+	
+	CP 5
+	JP Z, INT4m	;Загрузка операции
+
+	
+RET
+
+INT2:			;Установка часов
+	LD L, 1	;Изменение состояния
+	LD A, 1
+	OUT (ptG), A	;Установка адреса приёмника
+	IN A, (ptC)	;Загружаем секунды
+	LD B, 60h	;Загружаем максимальное для сравнения
+	Call CheckPartTime   	;Проверяем секунды
+	OUT (ptH), A	;Выдача приёмнику
+	JP INT2Done
+INT2Min:	
+	LD L, 2	;Изменение состояния
+	IN A, (ptB)	;Загружаем минуты
+	Call CheckPartTime   	;Проверяем минуты
+	OUT (ptH), A	;Выдача приёмнику
+	JP INT2Done
+INT2Hour:
+	LD L, 0	;Изменение состояния
+	IN A, (ptA)	;Загружаем часы
+	LD B, 12h	;Загружаем максимальное для сравнения
+	Call CheckPartTime   	;Проверяем часы
+	OUT (ptH), A	;Выдача приёмнику
+INT2Done:
+RET
+
+INT3:			;Установка АЛУ
+	LD L, 3	;Изменение состояния
+	LD A, 2	;Загрузка адресса АЛУ
+	OUT (ptG), A	;Установка адреса АЛУ
+	IN A, (ptA)	;Загружаем A
+	OUT (ptH), A	;Выдача приёмнику
+	JP INT3Done
+INT3B:	
+	LD L, 4	;Изменение состояния
+	IN A, (ptB)	;Загружаем B
+	OUT (ptH), A	;Выдача приёмнику
+	JP INT3Done
+INT3Op:
+	LD L, 0	;Изменение состояния
+	IN A, (ptC)	;Загружаем операцию
+	OUT (ptH), A	;Выдача приёмнику
+INT3Done:
+RET
+
+INT4:			;Установка АЛУ
+	LD L, 5	;Изменение состояния
+	LD A, 3	;Загрузка адресса АЛУ
+	OUT (ptG), A	;Установка адреса АЛУ
+	IN A, (ptA)	;Загружаем n
+	OUT (ptH), A	;Выдача приёмнику
+	JP INT4Done
+INT4m:	
+	LD L, 0	;Изменение состояния
+	IN A, (ptB)	;Загружаем m
+	OUT (ptH), A	;Выдача приёмнику
+
+INT4Done:
+RET
+

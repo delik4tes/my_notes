@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "cf88335817ea1029",
+    "type": "split",
+    "children": [
+      {
+        "id": "ed3c86ba5cffe4ff",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "МЭИ/5 семестр/МиСПИ/2022.09.06.md",
+            "mode": "preview",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4e7057bfd64f5fcc",
+    "type": "split",
+    "children": [
+      {
+        "id": "da994dc84cfea441",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c8b88350191138d9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "881f063f9ea46c01",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 333.5
+  },
+  "right": {
+    "id": "5589a6ad04c12db1",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ab9f05b0ac41e35",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cda7d1e969aa2645",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "МЭИ/5 семестр/МиСПИ/2022.09.06.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": true,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "fb7adf9ed12181e6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "20cb7c9caa2d39d0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "МЭИ/5 семестр/МиСПИ/2022.09.06.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "372bf72d7acfd74a",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "МЭИ/5 семестр/МиСПИ/2022.09.06.md"
+              }
+            }
+          },
+          {
+            "id": "0510c7eb44008911",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "7df3dd349daf20fb",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "6c6aa0158151fe2f",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 6
+      }
+    ],
+    "direction": "horizontal",
+    "width": 227.5,
+    "collapsed": true
+  },
+  "active": "ed3c86ba5cffe4ff",
+  "lastOpenFiles": [
+    "Дневник/2022 1-ый квартал/Цели на 1-ый квартал.md",
+    "Цель.md",
+    "Купить.md",
+    "МЭИ/5 семестр/МиСПИ/2022.10.11.md",
+    "МЭИ/5 семестр/WEB/2022.09.29.md",
+    "МЭИ/5 семестр/WEB/2022.09.01.md",
+    "Дневник/2022 1-ый квартал/Сентябрь/2022.09.19.md",
+    "Программирование/HTTP.md",
+    "Разобрать/Алгоритмы/Basic 1/Chapter 2.md",
+    "Разобрать/Алгоритмы/Basic 1/Chapter 1.md"
+  ]
+}

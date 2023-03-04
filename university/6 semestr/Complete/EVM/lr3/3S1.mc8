@@ -1,0 +1,137 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 2
+ROM 3
+RAM 0
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+ptA EQU 00
+ptB EQU 01
+ptC EQU 02
+ptD EQU 03
+ptE EQU 04
+ptF EQU 05
+ptG EQU 06
+ptH EQU 07
+
+ORG 0
+	JP START
+
+ORG 8h
+	JP INT1
+ORG 10h
+	JP INT2
+
+ORG 100h
+START:
+
+INF:
+	EI
+	JP INF
+
+ShowTime:
+	LD A, B	;Вывод секунд
+	OUT (ptC), A
+	LD A, C	;Вывод минут
+	OUT (ptB), A
+	LD A, D	;Вывод часов
+	OUT (ptA), A
+RET
+
+SendConfirmation:
+	LD A, 0
+	OUT (ptG), A
+	OUT (ptH), A
+RET
+
+CheckPartTime:
+	LD E, A	;Сохраняем копию в E
+	AND 0Fh	;Отрезаем старшую часть
+	CP 0Ah	;Проверяем, что не больше 10ти
+	LD A, E	;Восстанавливаем значение
+	LD E, 0	;Очищаем перенос
+	JP M, FirstPassed	;Если больше или равно, то обнуляем и увеличиваем старшую часть
+	AND 0F0h
+	ADD A, 10h	;Увеличиваем старшую часть
+FirstPassed:	
+	CP H		;Сравниваем с максимальным
+	JP M, CheckPassed	;Если больше или равно, то обнуляем и выдаём перенос
+	LD A, 0
+	LD E, 1	;Добавили перенос	
+CheckPassed:
+		
+RET
+
+
+INT1:			;Установка часов
+	LD A, L	;Загрузить состояние
+	CP 0
+	JP Z, Sec
+	CP 1
+	JP Z, Min
+	CP 2
+	JP Z, Hour 
+	
+Sec:	
+	LD L, 1	;Изменение состояния
+	IN A, (ptH)	;Загружаем секунды
+	LD B, A
+	Call SendConfirmation
+	JP Done
+	
+Min:	
+	LD L, 2	;Изменение состояния
+	IN A, (ptH)	;Загружаем минуты
+	LD C, A
+	Call SendConfirmation
+	JP Done
+	
+Hour:	
+	LD L, 0	;Изменение состояния
+	IN A, (ptH)	;Загружаем минуты
+	LD D, A
+	Call ShowTime
+	
+	JP Done
+	
+Done:
+RET
+
+INT2:			;Обновление времени
+	LD A, B	;Загружаем секунды
+	ADD A, 1	;Увеличиваем секунды
+	LD H, 60h	;Загружаем максимальное для сравнения
+	Call CheckPartTime	;Проверяем не переносы
+	LD B, A	;Кладём секунды обратно
+	
+	LD A, C	;Загружаем минуты
+	ADD A, E	;Добавлем перенос
+	LD H, 60h	;Загружаем максимальное для сравнения
+	Call CheckPartTime	;Проверяем не переносы
+	LD C, A	;Кладём минуты обратно
+	
+	LD A, D	;Загружаем часы
+	ADD A, E	;Добавлем перенос
+	LD H, 12h	;Загружаем максимальное для сравнения
+	Call CheckPartTime	;Проверяем не переносы
+	LD D, A	;Кладём часы обратно
+	
+	Call ShowTime 	;Обновляем время
+
+RET

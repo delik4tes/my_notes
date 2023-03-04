@@ -1,0 +1,344 @@
+\documentclass[11pt,  a4paper]{article}
+\pagestyle{empty} %Убирает номерацию страниц
+\usepackage{amsmath,  amssymb,  amsfonts} %модули для математики
+\usepackage{float}
+\usepackage{enumerate}
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage[margin = 1in]{geometry}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage[none]{hyphenat}
+\usepackage{fancyhdr}
+\parindent 0px
+\setlength{\parindent}{4cm}
+%\setlength{\parskip}{1cm}
+
+% Офомрление страниц
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyhead[L]{Title Here}
+\fancyhead[R]{Egor Zhelagin}
+\fancyhead[C]{Math} 
+
+
+\title{My \LaTeX\ Document}
+\author{Egor Zhelagin}
+\date{\today} %Можно свою дату ввести произвольную
+
+
+\def\eq1{y=\dfrac{x}{3x^2+x+1}}
+
+\begin{document}
+\maketitle
+
+Hello world in \LaTeX\ document.\\
+Let's ecamine the function $\eq1$
+
+\begin{titlepage}
+\begin{center}
+\vspace*{1cm}
+\Large{\textbf{IB Mathematics SL}}\\
+\Large{\textbf{Internal Assessment}}\\
+\vfill
+\line(1,0){400}\\[1mm]
+\huge{\textbf{This is a Sample Title}}\\[3mm]
+\Large{\textbf{This is a Sample Subtitle}}\\[1mm]
+\line(1,0){400}\\[1mm]
+\vfill
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+\thispagestyle{empty} %отделяет содержание на отдельнюю страницу
+\clearpage
+
+\setcounter{page}{1}
+
+Common Math:
+$3x+4$
+$$3x+4$$
+$$3x^3+4$$
+$$3x^{4x+4}+4$$
+
+subscripts
+$$x_1$$
+$$x_{12}$$
+$$x_{1_2}$$
+$$x_{1_{2_3}}$$
+$$a_0,a_1,a_2,  \ldots,  a_{100}$$
+
+Greek letters
+$$\pi$$
+$$\Pi$$
+$$\alpha$$
+$$A=\pi r^2$$ %Окружность
+
+Trig functions 
+$$ y=\sin x$$
+$$y=\cos\theta$$
+$$y=sin^{-1}x$$
+$$y=\arcsin 1$$
+
+Log Functions
+$$z=\log x$$
+$$z=\log_5 x$$
+$$z=\log_{5^2} x^2$$
+$$z=\ln x$$
+
+Lim:
+$$\lim\limits_{x\to a}f(x)$$
+
+Int:
+$$\int\sin x\,dx = -\cos x +C $$
+$$\int_a^b f(x)$$
+$$\displaystyle{\int \limits_{a}^{b} x^2 \,dx = \left[\frac{x^3}{3}\right]_{a}^{b}=\frac{b^3}{3}-\frac{a^3}{3}}$$\\
+
+Roots
+$$\sqrt[3]{2}$$
+$$\sqrt{x^2+y^2}$$
+$$\sqrt{1+\sqrt{x}}$$
+
+Fractions:
+$$\frac{2}{3}$$
+About $\displaystyle \frac{2}{3}$ of the glass is full.\\[4pt] %Сколько пустых строчек отступить
+About $\frac{2}{3}$ of the glass is full.
+														%Если пустая строчка,  то следующая строчка красная строка
+About $\frac{2}{3}$ of the glass is full. 
+
+$$\dfrac{2}{3}$$
+$$\frac{\sqrt{x+1}}{\sqrt{x+1}}$$\\
+The functions $f(x)=(x-3)^2+\frac{1}{2}$ has domain $\mathrm{D}_f:(-\infty,\infty)$
+
+The distributive property  states that $a(b+c)=ab+ac$ for all $a,b,c,\in\mathbb{R}$.\\[6pt]
+The equivalence class of $a$ is $[a]$.\\
+The set $a$ is defined to be $\{1,2,3\}$\\
+The movie ticket costs $\$11.50$.\\
+$$2\left(\frac{1}{x^2+1}\right)$$
+$$2\left[\frac{1}{x^2+1}\right]$$
+$$2\left\{\frac{1}{x^2+1}\right\}$$
+$$2\left \langle\frac{1}{x^2+1}\right\rangle$$
+$$2\left|\frac{1}{x^2+1}\right|$$
+$$\left.\frac{dy}{dx}\right|_{x=1}$$
+
+Tables:\\
+\begin{tabular}{|c|c|c|c|c|c|} %Во второй скобке количество колонн (столбцов) & - разделят текст в колонках
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5\\ \hline %горизонтальная линия
+$f(x)$ & $\frac{1}{2}$ & 11 & 12 & 13 & 14\\ \hline
+\end{tabular}
+
+\vspace{1cm}
+
+\begin{table}[H] %чтобы отображалось в нужном месте
+\def\arraystretch{1.5}
+\centering
+\caption{These values represen  the function $f(x)$}
+\begin{tabular}{|c||c|c|c|c|c|} %Во второй скобке количество колонн (столбцов) & - разделят текст в колонках
+\hline
+$x$ & 1 & 2 & 3 & 4 & 5\\ \hline %горизонтальная линия
+$f(x)$ & $\frac{1}{2}$ & 11 & 12 & 13 & 14\\ \hline
+\end{tabular}
+\caption{These values represen  the function $f(x)$}
+\end{table}
+
+%c - центр
+%l - слева
+%r - справа
+%p{} -параграф
+
+\begin{table}[H] 
+\def\arraystretch{1.5}
+\centering
+\caption{These values represen  the function $f(x)$}
+\begin{tabular}{|l|p{2in}|} %
+\hline
+$f(x)$&$f'(x)$\\ \hline %горизонтальная линия
+$x>0$& The function.\\ \hline
+\end{tabular}
+\end{table}
+
+Arrays:
+
+% & - ориентировка по цифре
+\begin{align}
+5x&^2\text{ place your words here}\\
+5x&-12=3x-10
+\end{align}
+
+\begin{align*}
+x=1
+\end{align*}
+
+\begin{align}
+2x&=2\\
+x&=1
+\end{align}
+
+\begin{enumerate}
+\item pencil
+\item calculator
+\item notebook
+	\begin{enumerate}
+	\item notes
+	\item homework
+		\begin{enumerate}
+		\item Math
+		\item Phys
+		\item IT
+		\end{enumerate}
+	\end{enumerate}
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\begin{itemize}
+\item pencil
+\item calculator
+\item notebook
+\end{itemize}
+
+\vspace{0.5cm}
+
+\begin{enumerate}[A.]
+\item pencil
+\item calculator
+\item notebook
+\end{enumerate}
+
+
+\vspace{0.5cm}
+
+\begin{enumerate}[i.]
+\item pencil
+\item calculator
+\item notebook
+\end{enumerate}
+
+
+\vspace{0.5cm}
+
+\begin{enumerate} \setcounter{enumi}{5}
+\item pencil
+\item calculator
+\item notebook
+\end{enumerate}
+
+\vspace{0.5cm}
+
+\begin{enumerate} \setcounter{enumi}{5}
+\item[a)] pencil
+\item[two] calculator
+\item[4] notebook
+\end{enumerate}
+
+Work with text:\\
+This will produce \textit{italic}.\\
+This will produce \textbf{bold}.\\
+This will produce \textsc{small caps}.\\
+This will produce \texttt{typewriter font}.\\  %Лучше использовать для ссылок
+This will produce \url{http://youtube.com}\\
+This will produce \href{http://youtube.com}{Youtube}
+\vspace{1cm}
+
+Please check my blog\\
+
+\begin{large}
+Please check my blog\\
+\end{large}
+
+\begin{Large}
+Please check my blog\\
+\end{Large}
+
+\begin{LARGE}
+Please check my blog\\
+\end{LARGE}
+
+\begin{huge}
+Please check my blog\\
+\end{huge}
+
+\begin{Huge}
+Please check my blog\\
+\end{Huge}
+
+\begin{normalsize}
+Please check my blog
+\end{normalsize}
+
+\begin{small}
+Please check my blog
+\end{small}
+
+\begin{scriptsize}
+Please check my blog
+\end{scriptsize}
+
+\begin{tiny}
+Please check my blog
+\end{tiny}
+
+\vspace{1cm}
+
+\begin{center}
+Please check my blog
+\end{center}
+
+\begin{flushleft}
+Please check my blog
+\end{flushleft}
+
+\begin{flushright}
+Please check my blog
+\end{flushright}
+
+\section{Linear Functions}
+	\subsection{Slope-Intercept Form}
+		\subsubsection{Example 1}
+		\subsubsection{Example 2}
+	\subsection{Standard Form}
+	\subsection{Point-Slope Form}
+\section{Quadratic Functions}
+
+\pagebreak
+
+\textbf{Critical Thinking Questions}
+
+\begin{figure}[h]
+\centering
+\includegraphics[scale=0.3]{iu}\\
+\caption{This is a kinds of figures}
+\label{fig:kinds}
+\end{figure}
+
+\begin{figure}[b] %H - где находится код,  t- сверху страницы,  b-снизу страницы
+\includegraphics[scale=0.6]{iu}
+\end{figure}
+
+
+\begin{enumerate}
+\item Is it possible for a sequence to converge to two different numbers? If so, give an example(see picture \ref{fig:kinds}). If not, explain why not.
+\item Explain how to use partial sums to determine if a series converges or diverges. Give an example
+\item Explain why $\int\limits_{1}^{\infty} f(x)\,dx$ and $\sum\limits_{n=1}^{\infty} a_n$ need not converge to the same value, even if they are both convergent.
+\item  In your own words, explain the Alternating Series Remainder Theorem. How is this theorem useful?
+\item Explain the difference between absolute and conditional convergence. Give an example of each.
+\item The Ratio Test is inconclusive if $\displaystyle{\lim\limits_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| =1}$. Give an example of one convergent series and one divergent series for which $\displaystyle{\lim\limits_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| =1}$. Explain how you determined your examples.\footnote{This first footnote}
+\end{enumerate}
+
+
+\pagebreak
+\begin{thebibliography}{2}
+
+\bibitem{1}
+Egor Zhelagin
+	High School
+\textit{Iternal Assessment}
+Web: 27 may 2015
+
+\bibitem{2}
+\end{thebibliography}
+
+
+\end{document}

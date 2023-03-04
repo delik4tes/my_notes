@@ -1,0 +1,42 @@
+### HomeBrew
+- anaconda
+- anki
+- calibre
+- dbeaver
+- discord
+- docker
+- go
+- git
+- mkvtoolnix
+- rectangle
+- python
+- obsidian
+- qBittorrent
+- sigil
+- stats
+- telegram
+- texmaker
+- tree
+- vim
+- visual-studio-code
+- vlc
+- watch 
+- youtube-dl
+### App Store
+- [Irvue](https://apps.apple.com/ru/app/irvue/id1039633667?l=en&mt=12)
+- [RAR](https://apps.apple.com/ru/app/rar-extractor-unarchiver/id646295438?l=en)
+- [Things](https://apps.apple.com/ru/app/things-3/id904280696?l=en&mt=12)
+- [Wirequard](https://apps.apple.com/ru/app/wireguard/id1451685025?l=en&mt=12)
+- [Xcode](https://apps.apple.com/ru/app/xcode/id497799835?l=en&mt=12)
+### Hack
+- [Adobe acrobat](https://appstorrent.ru/97-adobe-acrobat-pro-dc.html)
+- [App Cleaner](https://appstorrent.ru/261-mac-app-cleaner.html)
+- [CrossOver](https://appstorrent.ru/185-crossover.html)
+- [DJVU reader PRO](https://appstorrent.ru/360-djvu-reader-pro.html)
+### Other links
+- [ITerm2](https://www.youtube.com/watch?v=OwQlxI8z7kI)
+- [Goland](https://www.jetbrains.com/go/)
+- [PostgreSQL](https://www.postgresql.org/download/macosx/)
+- [PuntoSwitcher](https://yandex.ru/soft/punto/win/index)
+- [PyCharm](https://www.jetbrains.com/pycharm/)
+- [Latex](https://www.tug.org/mactex/mactex-download.html)

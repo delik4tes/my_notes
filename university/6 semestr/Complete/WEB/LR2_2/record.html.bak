@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ЛР2 Женюх А-07-19</title>
+	<style>
+		body {
+			text-align: center;
+		}
+		table {
+			margin-left: auto;
+			margin-right: auto;
+			width: 1000px;
+			border-collapse: collapse;
+		}
+		td, th {
+			padding: 3px;
+			height: 30px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Канцелярский магазин</h1>
+	<form action="saverecord.php" method="GET">
+	<table>
+		<tr>
+			<td colspan="4">
+				<p>Канцелярский магазин «Очумелые ручки».</p>
+				<p>комплект «скорая помощь художнику»</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>Внесите в заказ:</p>
+			</td>
+			<td>
+				<p>Простые карандаши</p>
+				<p><select name="type">
+					<option value="B">B</option>
+					<option value="H">H</option>
+					<option value="HB">HB</option>
+				</select> , <input type="text" name="qua1"/> шт. </p>
+
+				<p><select name="type">
+					<option value="B">B</option>
+					<option value="H">H</option>
+					<option value="HB">HB</option>
+				</select> , <input type="text" name="qua2"/> шт. </p>
+
+				<p><select name="type">
+					<option value="B">B</option>
+					<option value="H">H</option>
+					<option value="HB">HB</option>
+				</select> , <input type="text" name="qua3"/> шт. </p>
+
+			</td>
+			<td>
+				<p>Холст</p>
+				<p><input type="radio" name="papertype" value="А2"/>А2
+				<input type="radio" name="papertype" value="А3"/>А3
+				<input type="radio" name="papertype" value="А4"/>А4</p>
+			</td>
+			<td>
+				<p><input type="checkbox" name="gouache"/> Гуашь</p>
+				<p><input type="checkbox" name="watercolor"/> Акварель</p>
+				<p><input type="checkbox" name="marker"/> Черный контурный маркер</p>
+				<p><input type="checkbox" name="eraser"/> Ластик</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+			</td>
+			<td colspan="2">
+				<p>Дополните заказ вашими пожеланиями:</p>
+				<p><textarea name="comment" cols="30" rows="4"></textarea></p>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p>Телефон: <input type="text" name="phone" placeholder="+7 (ХХХ) ХХХ-ХХ-ХХ"/> </p>
+			</td>
+			<td colspan="2">
+				<p><input type="checkbox" name="sms"/> Хотите получать смс-оповещения о новых акциях?</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<p><input type="radio" name="delivery" value="pickup"/> самовывоз <input type="radio" name="delivery" value="courier"/> курьер </p>
+				<p>адрес доставки: <input type="text" name="address"/></p>
+			</td>
+			<td colspan="2">
+				<p><input type="submit" value="Купить -->"></p>
+			</td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>

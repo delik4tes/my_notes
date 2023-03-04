@@ -1,0 +1,129 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 2
+ROM 3
+RAM 0
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+ptA EQU 00
+ptB EQU 01
+ptC EQU 02
+ptD EQU 03
+ptE EQU 04
+ptF EQU 05
+ptG EQU 06
+ptH EQU 07
+
+ORG 0
+	JP START
+
+ORG 8h
+	JP INT1
+
+ORG 100h
+START:
+
+INF:
+	EI
+	JP INF
+
+SendConfirmation:
+	LD A, 0
+	OUT (ptG), A
+	OUT (ptH), A
+RET
+
+Calc:
+	CP 0		
+	JP z,f0		;Переход к функции, осуществляющей сложение
+	CP 1 
+	JP z,f1		;Переход к функци, осуществляющей вычитание
+	CP 2
+	JP z,f2		;Переход к функции, осуществляющей умножение
+	JP end
+
+f0:		;Сложение
+	LD A, B
+	ADD A, C
+	OUT (PtA), A
+
+	JP end
+
+
+f1:		;Вычитание
+	LD A, B
+	SUB C
+	OUT (PtA), A
+
+	JP end
+
+
+f2:		;Умножение
+	LD D, 0
+	LD A, C
+
+f2Loop:
+	CP 0		;Проверяем, что умножение не завершено
+	JP z, f2Out
+
+	LD A, D		;Предыдущий результат
+	ADD A, B		;Реализация умножения А на B через сложение А в цикле B раз
+	LD D, A		;Обновляем предыдущий результат
+	DEC C		;Засчитываем одну итерацию
+	LD A, C		
+	JP f2Loop
+
+f2Out:
+	LD A, D
+	OUT (PtA), A	;Выводим результат
+
+end:
+RET
+
+INT1:			;Приём операндов
+	LD A, L	;Загрузить состояние
+	CP 0
+	JP Z, LoadA
+	CP 1
+	JP Z, LoadB
+	CP 2
+	JP Z, LoadOp
+	
+LoadA:	
+	LD L, 1	;Изменение состояния
+	IN A, (ptH)	;Загружаем A
+	LD B, A
+	Call SendConfirmation
+	JP Done
+	
+LoadB:	
+	LD L, 2	;Изменение состояния
+	IN A, (ptH)	;Загружаем B
+	LD C, A
+	Call SendConfirmation
+	JP Done
+	
+LoadOp:	
+	LD L, 0	;Изменение состояния
+	IN A, (ptH)	;Загружаем операцию
+	Call Calc
+	JP Done
+	
+Done:
+RET

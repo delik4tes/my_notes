@@ -1,0 +1,98 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 2
+ROM 3
+RAM 3
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+pA EQU 00
+pB EQU 01
+pC EQU 02
+pD EQU 03
+
+ORG 0
+JP START
+
+ORG 8h
+JP SEC
+
+START:
+INF:
+EI
+JP INF
+
+SEC:
+INC B ; Увеличиваем секунду
+LD A, B
+CP 5Ah ; Проверяем перешли ли на следующую минуту
+JP NZ, TENSEC ; Если нет, то проверяем на необходимость увеличения старшей части секунд
+INC C ; Иначе увеличиваем на одну минуту
+LD B, 0 ; Обнуляем секунды
+JP MIN ; Переходим к минутам
+
+TENSEC:
+AND 0Fh ; Получаем младшую часть секунд
+CP 0Ah ; Проверяем перескочили ли за 9 секунд
+JP NZ, MIN ; Если нет, то переходим к минутам
+LD A, B ; Возвращаем в A секунды
+ADD A, 10h ; Увеличиваем старшую часть на 1
+AND 0F0h ; Оставляем только старшую часть
+LD B, A ; Загружаем в B полученные секунды
+
+MIN:
+LD A, C
+CP 5Ah ; Проверяем перешли ли на следующий час
+JP NZ, TENMIN ; Если нет, то проверяем на необходимость увеличения старшей части минут
+INC D ; Иначе увеличиваем на один час
+LD C, 0 ; Обнуляем минуты
+JP HOURS; Переходим к часам
+
+TENMIN:
+AND 0Fh ; Получаем младшую часть минут
+CP 0Ah ; Проверяем перескочили ли за 9 минут
+JP NZ, HOURS; Если нет, то переходим к часам
+LD A, C ; Возвращаем в A минуты
+ADD A, 10h ; Увеличиваем старшую часть на 1
+AND 0F0h ; Оставляем только старшую часть
+LD C, A ; Загружаем в C полученные минуты
+
+HOURS:
+LD A,D
+CP 24h
+JP NZ, TENHOURS
+LD D,0
+JP OUTTIME
+
+TENHOURS:
+AND 0Fh
+CP 0Ah
+JP NZ, OUTTIME
+LD A,D
+ADD A,10h
+AND 0F0h
+LD D, A
+
+OUTTIME:
+LD A, B
+OUT (pB), A ; Выводим секунды
+LD A, C
+OUT (pC), A ; Выводим минуты
+LD A, D
+OUT (pD), A
+RET

@@ -1,0 +1,80 @@
+******* DMC8 Project File *******
+* If you read this message, you need to install the last version of Deeds! *
+FVR 2
+DMC 2
+ROM 3
+RAM 5
+POH 7
+POG 6
+POF 5
+POE 4
+POD 3
+POC 2
+POB 1
+POA 0
+PIH 7
+PIG 6
+PIF 5
+PIE 4
+PID 3
+PIC 2
+PIB 1
+PIA 0
+******* DMC8 Project File *******
+ptA EQU 00
+ptB EQU 01
+ptC EQU 02
+ptD EQU 03
+
+ORG 0h
+JP START
+
+INF:
+JP INF
+
+ORG 8h
+CALL SUM
+
+START:
+EI
+LD A, Fh
+LD (8400h), A ;старшая часть
+LD (8401h), A ;младшая часть
+LD A, 0
+JP INF
+
+SUM:
+IN A, (ptB)
+LD B, A
+IN A, (ptA)
+ADD A, B
+LD B, A ;Сумма с портов
+
+LD H, 84h
+LD L, 01h
+LD A, (HL)
+LD L, 00h
+LD D, (HL)
+LD C, A
+LD A, D
+ADC 0; Учет переноса в старшую часть
+LD D, A
+LD A, C
+ADC A, B; Сумма с младшей частью из памяти с учетом переноса предыдущей суммы1
+LD C, A
+LD A, D
+ADC 0; Учет ещё одного переноса
+LD D, A
+LD A, C
+
+LD (8400h), D
+LD (8401h), A
+
+OUT (ptA), A
+LD A, D
+OUT (ptB), A
+
+
+RET
+
+

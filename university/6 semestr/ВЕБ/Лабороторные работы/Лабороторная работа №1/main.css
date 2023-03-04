@@ -1,0 +1,22 @@
+table, th, td {
+    border: 1px solid;
+    align-content: center;
+}
+
+table {
+    align-self: center;
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+    border-spacing: 0;
+}
+
+#submit {
+
+}
+
+#submit:hover{
+    color: white;
+    background: blue;
+    cursor: pointer;
+}

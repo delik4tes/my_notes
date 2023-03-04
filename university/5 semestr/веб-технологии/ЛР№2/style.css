@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+
+
+.side {
+  height: 100%;
+  width: 15%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  overflow-x: hidden;
+}
+
+.side a {
+  padding: 20px 10px 20px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.main{
+  background-color: rgb(6, 27, 102);
+}
+
+.common{
+  background-color: blue;
+}
+
+.main:hover {
+  background-color: rgb(127, 150, 219);
+}
+
+.common:hover {
+  background-color: rgb(127, 150, 219);
+}
+
+.boxtop {
+  display: inline-block;
+  margin-top: auto;
+  margin-left: 15%;
+  width: 100%;
+  height: 35%;
+  background: linear-gradient(blue,white);
+  margin-top: 0%;
+  border: 
+      1px
+      solid
+      black;
+}
+
+.boxbot {
+  margin-left: 15%;
+  display:inline-block;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+.boxbot, li{
+  border: 
+      1px
+      solid
+      black
+}
+
+.one{
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 30px;
+  nav-left: 100px;
+  background:linear-gradient(rgb(167, 131, 223),rgb(240, 239, 243));
+  width: 250px;
+  height: 100px;
+}
+
+.two{
+  text-align: right;
+  margin-top: 20px;
+  margin-left: 750px;
+  font-size: large;
+  background:linear-gradient(rgb(167, 131, 223),rgb(240, 239, 243));
+  width: 250px;
+  height: 100px;
+}
+
+.head{
+  margin-top: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: x-large;
+  color: black;
+}
+
+h1{
+  text-shadow:  3px 2px 5px rgb(186, 26, 149);
+}
+
+.ins{
+  color: black;
+  font-size: large;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+
+
+ul{
+  display: flex;
+  list-style: none;
+}
