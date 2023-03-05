@@ -1349,6 +1349,10 @@
 1263. https://coderj001.hashnode.dev/learn-concurrency-in-go-by-building-a-download-manager-part-2
 1264. https://coderj001.hashnode.dev/learn-concurrency-in-go-by-building-a-download-manager-part-2
 1265. https://alkesh26.hashnode.dev/leetcode-kth-smallest-element-in-a-sorted-matrix
+1266. https://alkesh26.hashnode.dev/leetcode-count-good-nodes-in-binary-tree
+1267. https://blog.rayspock.com/unleashing-the-power-of-go-how-to-unmarshal-dynamic-json
+1268. https://habr.com/ru/post/720544/?utm_campaign=720544
+1269. https://aryansharma.hashnode.dev/2023s-top-programming-languages-what-you-need-to-know
 
 Скачать:
 - https://www.youtube.com/watch?v=ZTJcaP4G4JM

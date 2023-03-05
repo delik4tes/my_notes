@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "computer networks/2.Технологии физического уровня.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -44,7 +44,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -138,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "self made/Советы по тренировкам.md",
+                "file": "golang/_Go.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "self made/Советы по тренировкам.md",
+                "file": "golang/_Go.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "self made/Советы по тренировкам.md"
+                "file": "golang/_Go.md"
               }
             }
           }
@@ -190,11 +190,11 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3e9784209a5b0ebb",
+  "active": "a5720c674c68ff3a",
   "lastOpenFiles": [
-    "golang/_Go.md",
     "self made/Советы по тренировкам.md",
     "computer networks/2.Технологии физического уровня.md",
+    "golang/_Go.md",
     "university/6 semestr/ВЕБ/Курсовая работа.pdf",
     "university/6 semestr/МПС/Лабороторные работы/Пояснение к лабороторной работе №1.pdf",
     "university/6 semestr/ВЕБ/Лабороторные работы/Лабороторная работа №1/main.css",
