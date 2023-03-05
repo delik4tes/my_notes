@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "golang/_Go.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               }
             }
@@ -35,8 +35,12 @@
             "id": "3e9784209a5b0ebb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "self made/Советы по тренировкам.md",
+                "mode": "source",
+                "source": true
+              }
             }
           }
         ],
@@ -134,6 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "self made/Советы по тренировкам.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,6 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "self made/Советы по тренировкам.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -160,7 +166,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "self made/Советы по тренировкам.md"
+              }
             }
           }
         ],
@@ -185,6 +193,7 @@
   "active": "3e9784209a5b0ebb",
   "lastOpenFiles": [
     "golang/_Go.md",
+    "self made/Советы по тренировкам.md",
     "computer networks/2.Технологии физического уровня.md",
     "university/6 semestr/ВЕБ/Курсовая работа.pdf",
     "university/6 semestr/МПС/Лабороторные работы/Пояснение к лабороторной работе №1.pdf",
@@ -197,7 +206,6 @@
     "university/6 semestr/Сети/Лекция №3 по сетям.pdf",
     "university/6 semestr/Untitled.md",
     "university/6 semestr/Курсовая работа.pdf",
-    "self made/Советы по тренировкам.md",
     "personal diary/Прочитано.md",
     "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
     "personal diary/2022-2023 1-ый квартал/Цели на 2-ой квартал.md",

@@ -1346,6 +1346,9 @@
 1260. https://chrisentechnology.hashnode.dev/creating-a-simple-crud-create-read-update-delete-app-with-go-lang
 1261. https://gosamples.dev/generate-uuid/
 1262. https://habr.com/ru/post/720382/?utm_campaign=720382
+1263. https://coderj001.hashnode.dev/learn-concurrency-in-go-by-building-a-download-manager-part-2
+1264. https://coderj001.hashnode.dev/learn-concurrency-in-go-by-building-a-download-manager-part-2
+1265. https://alkesh26.hashnode.dev/leetcode-kth-smallest-element-in-a-sorted-matrix
 
 Скачать:
 - https://www.youtube.com/watch?v=ZTJcaP4G4JM
