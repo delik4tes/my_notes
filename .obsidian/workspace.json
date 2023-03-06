@@ -42,9 +42,29 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "8cb5fb3a4c1d3e06",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ba28c5b0fa4ba78a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -138,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "golang/_Go.md",
+                "file": "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "golang/_Go.md",
+                "file": "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +187,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "golang/_Go.md"
+                "file": "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md"
               }
             }
           }
@@ -190,11 +210,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a5720c674c68ff3a",
+  "active": "8cb5fb3a4c1d3e06",
   "lastOpenFiles": [
+    "golang/_Go.md",
+    "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
+    "personal diary/2023 2-ой квартал/03.Март/06.03.2023.md",
     "self made/Советы по тренировкам.md",
     "computer networks/2.Технологии физического уровня.md",
-    "golang/_Go.md",
     "university/6 semestr/ВЕБ/Курсовая работа.pdf",
     "university/6 semestr/МПС/Лабороторные работы/Пояснение к лабороторной работе №1.pdf",
     "university/6 semestr/ВЕБ/Лабороторные работы/Лабороторная работа №1/main.css",
@@ -207,10 +229,8 @@
     "university/6 semestr/Untitled.md",
     "university/6 semestr/Курсовая работа.pdf",
     "personal diary/Прочитано.md",
-    "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
     "personal diary/2022-2023 1-ый квартал/Цели на 2-ой квартал.md",
     "personal diary/2022-2023 1-ый квартал/_attachments/5c8fc9c8eed67e742d35acb8edac8d82.png",
-    "personal diary/2023 2-ой квартал/03.Март/01.03.2023.md",
     "personal diary/План.md",
     "computer networks/_attachments/b33a87b7704e9640c4b565ea188f4683.png",
     "computer networks/_attachments/c10b00c5351e3e865c07c6e19afddfdd.png",

@@ -1353,6 +1353,9 @@
 1267. https://blog.rayspock.com/unleashing-the-power-of-go-how-to-unmarshal-dynamic-json
 1268. https://habr.com/ru/post/720544/?utm_campaign=720544
 1269. https://aryansharma.hashnode.dev/2023s-top-programming-languages-what-you-need-to-know
+1270. https://habr.com/ru/post/720286/?utm_campaign=720286
+1271. https://habr.com/ru/post/720582/?utm_campaign=720582
+1272. https://blog.matthiasbruns.com/golang-patterns-singleton
 
 Скачать:
 - https://www.youtube.com/watch?v=ZTJcaP4G4JM
