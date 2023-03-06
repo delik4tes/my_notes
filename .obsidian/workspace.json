@@ -54,17 +54,9 @@
                 "source": true
               }
             }
-          },
-          {
-            "id": "ba28c5b0fa4ba78a",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -158,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
+                "file": "self made/Советы по тренировкам.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
+                "file": "self made/Советы по тренировкам.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md"
+                "file": "self made/Советы по тренировкам.md"
               }
             }
           }
@@ -210,10 +202,10 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "8cb5fb3a4c1d3e06",
+  "active": "3e9784209a5b0ebb",
   "lastOpenFiles": [
-    "golang/_Go.md",
     "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
+    "golang/_Go.md",
     "personal diary/2023 2-ой квартал/03.Март/06.03.2023.md",
     "self made/Советы по тренировкам.md",
     "computer networks/2.Технологии физического уровня.md",
