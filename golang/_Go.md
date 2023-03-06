@@ -1356,6 +1356,9 @@
 1270. https://habr.com/ru/post/720286/?utm_campaign=720286
 1271. https://habr.com/ru/post/720582/?utm_campaign=720582
 1272. https://blog.matthiasbruns.com/golang-patterns-singleton
+1273. https://habr.com/ru/post/720490/?utm_campaign=720490
+1274. https://chedim.com/hey-google-why-go-is
+1275. https://golangbyexample.com/array-int-string-golang/
 
 Скачать:
 - https://www.youtube.com/watch?v=ZTJcaP4G4JM

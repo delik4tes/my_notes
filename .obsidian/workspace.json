@@ -56,7 +56,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -150,7 +150,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "self made/Советы по тренировкам.md",
+                "file": "golang/_Go.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -167,7 +167,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "self made/Советы по тренировкам.md",
+                "file": "golang/_Go.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -179,7 +179,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "self made/Советы по тренировкам.md"
+                "file": "golang/_Go.md"
               }
             }
           }
@@ -202,12 +202,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "3e9784209a5b0ebb",
+  "active": "a5720c674c68ff3a",
   "lastOpenFiles": [
+    "self made/Советы по тренировкам.md",
     "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
     "golang/_Go.md",
     "personal diary/2023 2-ой квартал/03.Март/06.03.2023.md",
-    "self made/Советы по тренировкам.md",
     "computer networks/2.Технологии физического уровня.md",
     "university/6 semestr/ВЕБ/Курсовая работа.pdf",
     "university/6 semestr/МПС/Лабороторные работы/Пояснение к лабороторной работе №1.pdf",
