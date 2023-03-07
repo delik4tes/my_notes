@@ -66,7 +66,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -160,7 +160,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "golang/_Go.md",
+                "file": "self made/Советы по тренировкам.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +177,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "golang/_Go.md",
+                "file": "self made/Советы по тренировкам.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,7 +189,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "golang/_Go.md"
+                "file": "self made/Советы по тренировкам.md"
               }
             }
           }
@@ -212,12 +212,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "003db2070da16e2b",
+  "active": "3e9784209a5b0ebb",
   "lastOpenFiles": [
-    "university/6 semestr/Сети/Лабороторные работы по сетям.pdf",
-    "self made/Советы по тренировкам.md",
     "golang/_Go.md",
+    "self made/Советы по тренировкам.md",
     "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
+    "university/6 semestr/Сети/Лабороторные работы по сетям.pdf",
     "personal diary/2023 2-ой квартал/03.Март/06.03.2023.md",
     "computer networks/2.Технологии физического уровня.md",
     "university/6 semestr/ВЕБ/Курсовая работа.pdf",

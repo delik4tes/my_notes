@@ -1363,6 +1363,8 @@
 1277. https://habr.com/ru/post/720678/?utm_campaign=720678
 1278. https://alkesh26.hashnode.dev/leetcode-rearrange-array-elements-by-sign-1
 1279. https://habr.com/ru/post/720596/?utm_campaign=720596
+1280. https://blogs.avash.in/making-a-dynamic-renderer-with-golang-from-scratch
+1281. https://www.ardanlabs.com/blog/2023/02/interfaces-101-interface-type-assertions.html
 
 Скачать:
 - https://www.youtube.com/watch?v=ZTJcaP4G4JM
