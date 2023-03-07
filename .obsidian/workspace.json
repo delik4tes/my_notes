@@ -23,11 +23,9 @@
             "id": "a5720c674c68ff3a",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "golang/_Go.md",
-                "mode": "source",
-                "source": true
+                "file": "university/6 semestr/Сети/Лабороторные работы по сетям.pdf"
               }
             }
           },
@@ -54,9 +52,21 @@
                 "source": true
               }
             }
+          },
+          {
+            "id": "003db2070da16e2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "golang/_Go.md",
+                "mode": "source",
+                "source": true
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -202,11 +212,12 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "a5720c674c68ff3a",
+  "active": "003db2070da16e2b",
   "lastOpenFiles": [
+    "university/6 semestr/Сети/Лабороторные работы по сетям.pdf",
     "self made/Советы по тренировкам.md",
-    "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
     "golang/_Go.md",
+    "personal diary/2023 2-ой квартал/Цели на 3-ий квартал.md",
     "personal diary/2023 2-ой квартал/03.Март/06.03.2023.md",
     "computer networks/2.Технологии физического уровня.md",
     "university/6 semestr/ВЕБ/Курсовая работа.pdf",
@@ -219,7 +230,6 @@
     "university/6 semestr/ВЕБ/untitled folder",
     "university/6 semestr/Сети/Лекция №3 по сетям.pdf",
     "university/6 semestr/Untitled.md",
-    "university/6 semestr/Курсовая работа.pdf",
     "personal diary/Прочитано.md",
     "personal diary/2022-2023 1-ый квартал/Цели на 2-ой квартал.md",
     "personal diary/2022-2023 1-ый квартал/_attachments/5c8fc9c8eed67e742d35acb8edac8d82.png",

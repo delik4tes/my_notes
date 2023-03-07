@@ -1359,6 +1359,10 @@
 1273. https://habr.com/ru/post/720490/?utm_campaign=720490
 1274. https://chedim.com/hey-google-why-go-is
 1275. https://golangbyexample.com/array-int-string-golang/
+1276. https://blog.matthiasbruns.com/golang-patterns-prototype
+1277. https://habr.com/ru/post/720678/?utm_campaign=720678
+1278. https://alkesh26.hashnode.dev/leetcode-rearrange-array-elements-by-sign-1
+1279. https://habr.com/ru/post/720596/?utm_campaign=720596
 
 Скачать:
 - https://www.youtube.com/watch?v=ZTJcaP4G4JM
